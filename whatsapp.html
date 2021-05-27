@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="whatsapp.css">
+        <link rel="stylesheet" media="screen and (min-width:768px)" href="laptopapp.css">
+        <link rel="stylesheet" media="screen and (min-width:991px)" href="desktopapp.css">
+ 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div>
+            <div class="zero" id="zeroid">
+                <div id="zero-whatsapp-logo-id" class="zero-whatsapp-logo">
+                    <img src="https://www.freeiconspng.com/thumbs/logo-whatsapp-png/logo-whatsapp-transparent-background-22.png">
+                </div>
+                <div id="zero-txt-from-id" class="zero-txt-from">
+                    <h6>from</h6>
+                </div>
+                <div class="zero-txt-facebook">
+                    <h2>FACEBOOK</h2>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <div class="header" id="headerid">
+                    <div class="header-txt-whatsapp">
+                        <h1>WhatsApp</h1>
+                    </div>
+                    <div class="header-triple-dot">
+                        <a onclick="tripleDotOpenFun()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                        </svg></a>
+                    </div>
+                    <div class="header-search">
+                        <a onclick="headerSearchFun()"><i class="glyphicon glyphicon-search"></i></a>
+                    </div>
+                </div>
+
+                <div class="header2" id="header2id">
+                    <div class="header2-camera">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                            <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                            <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                        </svg>
+                    </div>
+                    <div class="header2-txt-chats">
+                        <h1>CHATS<span></span></h1>
+                    </div>
+                    <div class="header2-txt-status">
+                        <h1>STATUS<span></span></h1>
+                    </div>
+                    <div class="header2-txt-calls">
+                        <h1>CALLS<span></span></h1>
+                    </div>
+                </div>
+                
+                <div class="contact-search" id="contact-search-id">
+                    <a onclick="backToHeaderFun()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg></a>
+                    <input type="text" name="searchContact" placeholder="Search...">
+                </div>
+
+                <a onclick="tripleDotCloseFun()" class="triple-dot-close" id="triple-dot-close-id"></a>
+
+                <div class="triple-dot-open" id="triple-dot-open-id">
+                    <a onclick=""><div><h1>New group</h1></div></a>
+                    <a onclick=""><div><h1>New broadcast</h1></div></a>
+                    <a onclick=""><div><h1>Whatsapp Web</h1></div></a>
+                    <a onclick=""><div><h1>Starred messages</h1></div></a>
+                    <a onclick=""><div><h1>Payments</h1></div></a>
+                    <a onclick=""><div><h1>Settings</h1></div></a>
+                </div>
+
+
+            </div>
+        </div>
+
+    <script src="whatsapp.js"></script>    
+    </body>
+</html>

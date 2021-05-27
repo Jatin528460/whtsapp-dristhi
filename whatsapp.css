@@ -1,0 +1,493 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.zero-whatsapp-logo{
+    text-align: center;
+    margin-top: 110px;
+}
+.zero-whatsapp-logo img{
+    width: 170px;
+    height: 140px;
+}
+.zero-txt-from{
+    text-align: center;
+    margin-top: 170px;
+}
+.zero-txt-from h6{
+    color: grey;
+    font-size: 17px;
+    margin: 0;
+    font-weight: 300;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.zero-txt-facebook{
+    text-align: center;
+}
+.zero-txt-facebook h2{
+    color: rgb(59, 230, 59);
+    font-size: 19px;
+    font-weight: 800;
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+
+
+.header{
+    display: none;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(10, 141, 76);
+}
+.header-txt-whatsapp{
+    float: left;
+    color: white;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+.header-txt-whatsapp h1{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif
+}
+.header-search{
+    float: right;
+    margin: 9px;
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding-top: 5px;
+}
+.header-search a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.header-search a i{
+    width: 30px;
+    height: 20px;
+    color: white;
+}
+.header-search:hover{
+    background-color:rgb(47, 160, 103);
+    color: white;
+}
+.header-triple-dot{
+    float: right;
+    margin: 9px;
+    margin-top: 20px;  
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.header-triple-dot a{
+    color: white;
+}
+.header-triple-dot a path{
+    color: white;
+}
+.header-triple-dot:hover{
+    background-color:rgb(47, 160, 103);
+    color: white;
+}
+
+
+.header2{
+    width: 100%;
+    background-color: rgb(10, 141, 76); 
+    height: 60px;
+    display: none;
+}
+.header2-camera{
+    float: left;
+    width: 10%;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+    height: 40px;
+}
+.header2-camera svg{
+    margin-left: 3%;
+}
+.header2-txt-chats{
+    float: left;
+    width: 29%;
+    margin-top: 20px;
+    padding-top: 10px;
+    height: 40px;
+}
+.header2-txt-chats h1{
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+}
+.header2-txt-status{
+    float: left;
+    width: 29%;
+    margin-top: 20px;
+    padding-top: 10px;
+    height: 40px;
+}
+.header2-txt-status h1{
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+}
+.header2-txt-calls{
+    float: left;
+    width: 29%;
+    margin-top: 20px;
+    padding-top: 10px;
+    height: 40px;
+}
+.header2-txt-calls h1{
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+}
+
+.header2-camera:hover,.header2-txt-chats:hover,.header2-txt-status:hover,.header2-txt-calls:hover{
+    background-color:rgb(47, 160, 103);
+}
+
+
+
+.contact-search{
+    width: 100%;
+    height: 38px;
+    border-bottom: 1.5px groove rgba(160,160,160,.2);
+    margin-top: 8px;
+    padding-bottom: 8px;
+    display: none;
+}
+.contact-search svg{
+    float: left;
+    width: 7%;
+    color: rgb(10, 141, 76);
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+    border-radius: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.contact-search input{
+    float: left;
+    width: 85%;
+    height: 30px;
+    border: none;
+    font-size: 25px;
+    font-weight: 300;
+    color: rgba(160,160,160,.2);
+    font-family: 'Roboto', sans-serif;
+}
+.contact-search svg:hover{
+    background-color: rgba(160,160,160,.2);
+}
+
+
+.triple-dot-open{
+    width: 200px;
+    height: 240px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.triple-dot-open a{
+    color: black;
+    width: 100%;
+    text-decoration: none;
+}
+.triple-dot-open a div{
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.triple-dot-open a div h1{
+    font-size: 18px;
+    margin: 0;
+    height: 40px;
+    vertical-align: middle;
+    font-weight: 560;
+    font-family: 'Roboto', sans-serif;
+}
+
+.triple-dot-close{
+    width: 100%;
+    height: 1000px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*............media........
+............media.........
+............media........
+............media........
+............media........*/
+
+
+
+
+
+
+
+
+@media (min-width:370px) and (max-width:767px){
+    .zero-whatsapp-logo{
+        margin-top: 20px;
+    }
+    .zero-whatsapp-logo img{
+        width: 260px;
+        height: 200px;
+    }
+    .zero-txt-from{
+        margin-top: 180px;
+    }
+    .zero-txt-from h6{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .zero-txt-facebook h2{
+        font-size: 23px;
+        font-weight: 800;
+        margin: 0;
+    }
+   
+    
+
+    .header{
+        height: 70px;
+    }
+    .header-txt-whatsapp{
+        margin-left: 18px;
+        margin-top: 25px;
+    }
+    .header-txt-whatsapp h1{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .header-search{
+        margin: 12px;
+        margin-top: 25px;
+    }
+    .header-triple-dot{
+        margin: 12px;
+        margin-top: 25px;
+        
+    }
+    
+    
+    
+    .header2{
+        width: 100%;
+        height: 60px;
+    }
+    .header2-camera{
+        margin-top: 20px;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .header2-txt-chats{
+        margin-top: 20px;
+    }
+    .header2-txt-chats h1{
+        font-size: 20px;
+        font-weight: 550;
+    }
+    .header2-txt-status{
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
+    .header2-txt-status h1{
+        font-size: 20px;
+        font-weight: 550;
+    }
+    .header2-txt-calls{
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
+    .header2-txt-calls h1{
+        font-size: 20px;
+        font-weight: 550;
+    }
+    
+
+
+
+    .triple-dot-open{
+        width: 250px;
+        height: 360px;
+    }
+    .triple-dot-open a div{
+        height: 60px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .triple-dot-open a div h1{
+        font-size: 23px;
+        height: 60px;
+        font-weight: 560;
+    }
+
+    
+}
+
+@media (max-width:300px){
+    .zero-whatsapp-logo{
+        margin-top: 30px;
+    }
+    .zero-whatsapp-logo img{
+        width: 190px;
+        height: 150px;
+    }
+    .zero-txt-from{
+        margin-top: 200px;
+    }
+    .zero-txt-from h6{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .zero-txt-facebook h2{
+        font-size: 20px;
+        font-weight: 800;
+        margin: 0;
+    }
+   
+
+    
+
+    .header{
+        height: 50px;
+    }
+    .header-txt-whatsapp{
+        margin-left: 8px;
+        margin-top: 13px;
+    }
+    .header-txt-whatsapp h1{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .header-search{
+        margin: 5px;
+        margin-top: 13px;
+    }
+    .header-triple-dot{
+        margin: 5px;
+        margin-top: 13px;
+        
+    }
+    
+    
+    
+    .header2{
+        width: 100%;
+        height: 40px;
+    }
+    .header2-camera{
+        margin-top: 10px;
+        font-size: 15px;
+        padding-top: 7px;
+        height: 30px;
+    }
+    .header2-txt-chats{
+        margin-top: 10px;
+        padding-top: 7px;
+        height: 30px;
+    }
+    .header2-txt-chats h1{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .header2-txt-status{
+        margin-top: 10px;
+        padding-top: 7px;
+        height: 30px;
+    }
+    .header2-txt-status h1{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .header2-txt-calls{
+        margin-top: 10px;
+        padding-top: 7px;
+        height: 30px;
+    }
+    .header2-txt-calls h1{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+
+
+    
+.contact-search{
+    height: 34px;
+    margin-top: 6px;
+    padding-bottom: 6px;
+}
+.contact-search svg{
+    height: 28px;
+}
+.contact-search input{
+    height: 28px;
+    font-size: 23px;
+    font-weight: 270;
+}
+
+
+
+
+.triple-dot-open{
+    width: 150px;
+    height: 240px;
+}
+.triple-dot-open a div{
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.triple-dot-open a div h1{
+    font-size: 15px;
+    height: 40px;
+    font-weight: 560;
+}
+
+}
+
